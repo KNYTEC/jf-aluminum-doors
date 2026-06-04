@@ -62,7 +62,48 @@
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "15:30" }
   ],
+  "knowsLanguage": ["en","es"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Aluminum Door & Window Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom aluminum entry doors (single & pairs)" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sliding & bi-fold aluminum patio doors" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aluminum windows & picture windows" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial storefronts & curtain wall" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aluminum gates & enclosures" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Glass, door closers & hardware" } }
+    ]
+  },
   "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What areas does JF Aluminum Doors serve?",
+      "acceptedAnswer": { "@type": "Answer", "text": "JF Aluminum Doors serves Los Angeles County, Orange County, and the Inland Empire. Products are fabricated in our South Los Angeles shop (5832 Holmes Ave) and installed throughout Southern California for both residential and commercial clients." }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of aluminum doors does JF Aluminum Doors make?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We fabricate and install custom aluminum entry doors (single and pairs), sliding and bi-fold patio doors, aluminum windows, commercial storefronts, gates, and supply glass, door closers and hardware. Finishes include clear and bronze anodized plus custom colors." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get a quote from JF Aluminum Doors?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Call (323) 277-9270 for a free quote. JF Aluminum Doors is family-owned and operated since 2011, CA Contractor License #1130494." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is JF Aluminum Doors licensed?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. JF Aluminum Doors holds California Contractor License #1130494 and has been family-owned and operated since 2011." }
+    }
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -171,6 +212,17 @@
   .citygrid span{background:var(--bg);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 16px;font-family:'Oswald';text-transform:uppercase;font-size:16px;letter-spacing:.04em;color:var(--mut);transition:.2s;}
   .citygrid span:hover{background:var(--bg-3);color:var(--txt);}
   .citygrid span.hl{background:var(--red);color:#fff;}
+
+  /* faq */
+  .faq{border-top:1px solid var(--line);}
+  .faq .faq-in{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:start;}
+  .faq .ttl{font-size:clamp(34px,4vw,56px);line-height:.98;margin-top:18px;}
+  .faq dl{margin:0;border-top:1px solid var(--line);}
+  .faq .qa{border-bottom:1px solid var(--line);padding:26px 0;}
+  .faq dt{font-family:'Oswald';font-weight:600;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(18px,1.5vw,22px);color:var(--txt);display:flex;gap:16px;align-items:baseline;}
+  .faq dt .qn{font-family:'Space Mono',monospace;font-size:13px;color:var(--red);flex:none;}
+  .faq dd{margin:12px 0 0 39px;color:var(--mut);max-width:62ch;line-height:1.6;}
+  @media(max-width:820px){.faq .faq-in{grid-template-columns:1fr;gap:34px;}}
   .area-map{aspect-ratio:1/1;border:1px solid var(--line);overflow:hidden;position:relative;background:#15181b;}
   .area-map iframe{width:100%;height:100%;border:0;display:block;filter:invert(92%) hue-rotate(180deg) brightness(.95) contrast(.95);}
 
@@ -220,6 +272,7 @@
       <a href="#services" data-en="Services" data-es="Servicios">Services</a>
       <a href="#work" data-en="Work" data-es="Proyectos">Work</a>
       <a href="#area" data-en="Coverage" data-es="Cobertura">Coverage</a>
+      <a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a>
     </nav>
     <div class="nav-right">
       <div class="lang"><button data-lang-set="en">EN</button><button data-lang-set="es">ES</button></div>
@@ -308,6 +361,34 @@
     <div class="area-map">
       <iframe title="JF Aluminum Doors service area map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=JF%20Aluminum%20Doors%2C%205832%20Holmes%20Ave%2C%20Los%20Angeles%2C%20CA%2090001&z=9&output=embed"></iframe>
     </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="wrap faq-in">
+    <div>
+      <span class="kick" data-en="Questions" data-es="Preguntas">Questions</span>
+      <h2 class="ttl" data-en="Frequently<br/>asked" data-es="Preguntas<br/>frecuentes">Frequently<br/>asked</h2>
+    </div>
+    <dl>
+      <div class="qa">
+        <dt><span class="qn">01</span><span data-en="What areas do you serve?" data-es="¿Qué áreas cubren?">What areas do you serve?</span></dt>
+        <dd data-en="We serve Los Angeles County, Orange County and the Inland Empire. Everything is fabricated in our South LA shop at 5832 Holmes Ave and installed across Southern California for both residential and commercial clients." data-es="Servimos el condado de Los Ángeles, Orange County y el Inland Empire. Todo se fabrica en nuestro taller del sur de LA en 5832 Holmes Ave y se instala en todo el sur de California, para clientes residenciales y comerciales.">We serve Los Angeles County, Orange County and the Inland Empire. Everything is fabricated in our South LA shop at 5832 Holmes Ave and installed across Southern California for both residential and commercial clients.</dd>
+      </div>
+      <div class="qa">
+        <dt><span class="qn">02</span><span data-en="What types of aluminum doors do you make?" data-es="¿Qué tipos de puertas de aluminio hacen?">What types of aluminum doors do you make?</span></dt>
+        <dd data-en="Custom aluminum entry doors (single and pairs), sliding and bi-fold patio doors, aluminum windows, commercial storefronts and gates — plus glass, door closers and hardware. Finishes include clear and bronze anodized and custom colors." data-es="Puertas de entrada de aluminio a medida (sencillas y dobles), corredizas y plegables, ventanas de aluminio, fachadas comerciales y portones — además de vidrio, cierres y herrajes. Acabados en anodizado claro, bronce y colores a medida.">Custom aluminum entry doors (single and pairs), sliding and bi-fold patio doors, aluminum windows, commercial storefronts and gates — plus glass, door closers and hardware. Finishes include clear and bronze anodized and custom colors.</dd>
+      </div>
+      <div class="qa">
+        <dt><span class="qn">03</span><span data-en="Are you licensed?" data-es="¿Están licenciados?">Are you licensed?</span></dt>
+        <dd data-en="Yes — JF Aluminum Doors holds California Contractor License #1130494 and has been family-owned and operated since 2011." data-es="Sí — JF Aluminum Doors cuenta con la Licencia de Contratista de California #1130494 y es de propiedad y operación familiar desde 2011.">Yes — JF Aluminum Doors holds California Contractor License #1130494 and has been family-owned and operated since 2011.</dd>
+      </div>
+      <div class="qa">
+        <dt><span class="qn">04</span><span data-en="How do I get a quote?" data-es="¿Cómo obtengo una cotización?">How do I get a quote?</span></dt>
+        <dd data-en="Call (323) 277-9270. We measure and quote at no charge. Hablamos español." data-es="Llame al (323) 277-9270. Medimos y cotizamos sin costo. Hablamos español.">Call (323) 277-9270. We measure and quote at no charge. Hablamos español.</dd>
+      </div>
+    </dl>
   </div>
 </section>
 
