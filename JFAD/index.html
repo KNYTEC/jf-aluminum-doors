@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JF Aluminum Doors — Built In Steel City Tough | Los Angeles Aluminum Doors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --red:#E11932; --red-dk:#B30F22;
+    --bg:#101214; --bg-2:#16191C; --bg-3:#1D2125; --line:#2A2F34;
+    --txt:#EDEEF0; --mut:#9AA1A8; --mut2:#6E767D;
+    --maxw:1240px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Barlow',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  img{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+  h1,h2,h3{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.005em;line-height:.98;font-weight:700;}
+  .mono{font-family:'Space Mono',monospace;}
+  .kick{font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);display:inline-flex;align-items:center;gap:10px;}
+  .kick::before{content:"";width:26px;height:2px;background:var(--red);}
+
+  .btn{display:inline-flex;align-items:center;gap:11px;font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:600;letter-spacing:.05em;font-size:16px;
+       padding:16px 28px;cursor:pointer;border:none;transition:.18s;clip-path:polygon(0 0,100% 0,100% 100%,12px 100%,0 calc(100% - 12px));}
+  .btn-red{background:var(--red);color:#fff;}
+  .btn-red:hover{background:var(--red-dk);}
+  .btn-out{background:transparent;color:var(--txt);border:1.5px solid var(--line);clip-path:none;}
+  .btn-out:hover{border-color:var(--txt);}
+  .btn svg{width:18px;height:18px;}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(16,18,20,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:78px;}
+  .brand img{height:48px;}
+  .nav-links{display:flex;gap:34px;}
+  .nav-links a{font-family:'Oswald';text-transform:uppercase;font-weight:500;font-size:15px;letter-spacing:.06em;color:var(--mut);transition:.15s;}
+  .nav-links a:hover{color:var(--txt);}
+  .nav-right{display:flex;align-items:center;gap:18px;}
+  .lang{display:flex;border:1px solid var(--line);}
+  .lang button{font-family:'Space Mono',monospace;font-weight:700;font-size:12px;padding:8px 11px;background:transparent;color:var(--mut2);border:none;cursor:pointer;}
+  .lang button.is-active{background:var(--red);color:#fff;}
+  .nav-phone{font-family:'Oswald';font-weight:600;font-size:18px;display:inline-flex;align-items:center;gap:9px;}
+  .nav-phone svg{width:18px;height:18px;color:var(--red);}
+
+  /* hero */
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden;}
+  .hero-bg{position:absolute;inset:0;}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.25) contrast(1.05);}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,18,20,.96) 0%,rgba(16,18,20,.82) 38%,rgba(16,18,20,.35) 75%,rgba(16,18,20,.55) 100%);}
+  .hero-bg::before{content:"";position:absolute;inset:0;z-index:2;background-image:repeating-linear-gradient(0deg,transparent 0 38px,rgba(0,0,0,.14) 38px 39px);pointer-events:none;}
+  .hero-in{position:relative;z-index:3;padding:0 0 72px;max-width:840px;}
+  .hero h1{font-size:clamp(48px,8vw,108px);font-weight:700;margin:22px 0 0;}
+  .hero h1 em{font-style:normal;color:var(--red);}
+  .hero p{font-size:19px;color:var(--mut);max-width:540px;margin-top:30px;font-weight:500;}
+  .hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
+  .hero-stats{display:flex;gap:0;margin-top:48px;border-top:1px solid var(--line);}
+  .hs{padding:20px 34px 0 0;margin-right:34px;border-right:1px solid var(--line);}
+  .hs:last-child{border:none;}
+  .hs .n{font-family:'Oswald';font-weight:700;font-size:34px;color:#fff;line-height:1;}
+  .hs .l{font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut2);margin-top:7px;}
+
+  section{padding:96px 0;}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:54px;flex-wrap:wrap;}
+  .sec-head h2{font-size:clamp(34px,5vw,60px);}
+  .sec-head .idx{font-family:'Space Mono',monospace;color:var(--mut2);font-size:13px;letter-spacing:.1em;}
+
+  /* services list */
+  .svc-list{border-top:1px solid var(--line);}
+  .row{display:grid;grid-template-columns:90px 1fr 1.3fr auto;gap:30px;align-items:center;padding:30px 8px;border-bottom:1px solid var(--line);transition:.2s;position:relative;}
+  .row::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:var(--red);transition:width .2s;}
+  .row:hover{background:var(--bg-2);padding-left:24px;}
+  .row:hover::before{width:3px;}
+  .row .num{font-family:'Space Mono',monospace;color:var(--red);font-size:15px;font-weight:700;}
+  .row h3{font-size:27px;}
+  .row p{color:var(--mut);font-size:15.5px;}
+  .row .go{width:42px;height:42px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--mut);transition:.2s;}
+  .row:hover .go{background:var(--red);border-color:var(--red);color:#fff;}
+  .row .go svg{width:18px;height:18px;}
+  .finishes{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:.05em;color:var(--mut);}
+  .finishes b{color:var(--txt);}
+  .finishes span{padding:7px 14px;border:1px solid var(--line);}
+
+  /* gallery */
+  .gal{background:var(--bg-2);}
+  .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;}
+  .cell{position:relative;overflow:hidden;background:#000;}
+  .cell img{width:100%;height:100%;object-fit:cover;filter:grayscale(.15);transition:transform .55s,filter .3s;}
+  .cell:hover img{transform:scale(1.07);filter:none;}
+  .cell .tag{position:absolute;left:14px;bottom:14px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(16,18,20,.7);padding:6px 11px;backdrop-filter:blur(4px);}
+  .c1{grid-column:span 5;grid-row:span 2;}
+  .c2{grid-column:span 7;}
+  .c3{grid-column:span 4;}
+  .c4{grid-column:span 3;}
+  .c5{grid-column:span 4;}
+  .c6{grid-column:span 8;}
+  .cell.c2,.cell.c6{aspect-ratio:16/8;}
+  .cell.c3,.cell.c4,.cell.c5{aspect-ratio:4/3;}
+
+  /* area */
+  .area{position:relative;}
+  .area-in{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+  .area h2{font-size:clamp(34px,5vw,56px);}
+  .area p{color:var(--mut);font-size:17px;margin-top:18px;max-width:460px;}
+  .citygrid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:8px;}
+  .citygrid span{background:var(--bg);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 16px;font-family:'Oswald';text-transform:uppercase;font-size:16px;letter-spacing:.04em;color:var(--mut);transition:.2s;}
+  .citygrid span:hover{background:var(--bg-3);color:var(--txt);}
+  .citygrid span.hl{background:var(--red);color:#fff;}
+  .area-map{aspect-ratio:1/1;border:1px solid var(--line);background:
+     repeating-linear-gradient(0deg,#16191C 0 26px,#14171a 26px 27px),
+     repeating-linear-gradient(90deg,transparent 0 26px,rgba(42,47,52,.6) 26px 27px);position:relative;}
+  .area-map .pin{position:absolute;width:14px;height:14px;background:var(--red);border-radius:50%;box-shadow:0 0 0 6px rgba(225,25,50,.2),0 0 20px rgba(225,25,50,.6);}
+  .area-map .ml{position:absolute;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--txt);text-transform:uppercase;}
+
+  /* cta */
+  .cta{background:var(--red);color:#fff;text-align:center;padding:90px 0;position:relative;overflow:hidden;}
+  .cta::before{content:"JF";position:absolute;font-family:'Oswald';font-weight:700;font-size:46vw;color:rgba(255,255,255,.07);top:50%;left:50%;transform:translate(-50%,-50%);line-height:1;pointer-events:none;}
+  .cta .in{position:relative;z-index:2;}
+  .cta h2{font-size:clamp(36px,6vw,72px);color:#fff;}
+  .cta p{font-size:18px;color:rgba(255,255,255,.85);margin-top:16px;font-weight:500;}
+  .cta-phone{font-family:'Oswald';font-weight:700;font-size:clamp(40px,7vw,76px);color:#fff;display:inline-flex;align-items:center;gap:18px;margin-top:24px;}
+  .cta-phone svg{width:.7em;height:.7em;}
+
+  footer{background:#0A0C0D;padding:60px 0 32px;color:var(--mut);font-size:14.5px;}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid var(--line);}
+  footer img.flogo{height:54px;margin-bottom:18px;}
+  footer h4{font-family:'Oswald';text-transform:uppercase;color:#fff;font-size:14px;letter-spacing:.12em;margin-bottom:16px;}
+  .frow{display:flex;gap:11px;margin-bottom:11px;}
+  .frow svg{width:16px;height:16px;color:var(--red);flex:none;margin-top:3px;}
+  footer a:hover{color:#fff;}
+  .foot-bottom{display:flex;justify-content:space-between;padding-top:22px;flex-wrap:wrap;gap:14px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.04em;}
+  .lic{color:#fff;border:1px solid var(--line);padding:5px 11px;}
+
+  @media(max-width:920px){
+    .nav-links{display:none;}
+    .area-in{grid-template-columns:1fr;}
+    .row{grid-template-columns:50px 1fr;gap:14px;}
+    .row p,.row .go{display:none;}
+    .grid{grid-template-columns:repeat(2,1fr);}
+    .c1,.c2,.c3,.c4,.c5,.c6{grid-column:span 1;grid-row:auto;aspect-ratio:4/3;}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 18px;}
+    .hero-stats{flex-wrap:wrap;gap:18px;}
+    .hs{border-right:none;margin-right:0;padding-right:0;}
+    .citygrid{grid-template-columns:repeat(2,1fr);}
+    .nav-phone .ntxt{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><img src="assets/logo-transparent.png" alt="JF Aluminum Doors" /></a>
+    <nav class="nav-links">
+      <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+      <a href="#work" data-en="Work" data-es="Proyectos">Work</a>
+      <a href="#area" data-en="Coverage" data-es="Cobertura">Coverage</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang"><button data-lang-set="en">EN</button><button data-lang-set="es">ES</button></div>
+      <a class="nav-phone" href="tel:+13232779270"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="ntxt">(323) 277-9270</span></a>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"><img src="assets/storefront-black.png" alt="Black aluminum storefront system" /></div>
+  <div class="wrap hero-in">
+    <span class="kick" data-en="Los Angeles · Family-owned since 2011" data-es="Los Ángeles · Familiar desde 2011">Los Angeles · Family-owned since 2011</span>
+    <h1 data-en="Aluminum doors<br/>built <em>tough.</em>" data-es="Puertas de aluminio<br/>hechas <em>fuertes.</em>">Aluminum doors<br/>built <em>tough.</em></h1>
+    <p data-en="We fabricate and install commercial storefronts, sliding doors, entries and windows across Los Angeles. Standard or custom — measured, built and hung right." data-es="Fabricamos e instalamos fachadas comerciales, puertas corredizas, entradas y ventanas en todo Los Ángeles. Estándar o a medida — medidas, fabricadas y montadas bien.">We fabricate and install commercial storefronts, sliding doors, entries and windows across Los Angeles. Standard or custom — measured, built and hung right.</p>
+    <div class="hero-cta">
+      <a class="btn btn-red" href="tel:+13232779270"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span data-en="Call For Free Quote" data-es="Llame: Cotización Gratis">Call For Free Quote</span></a>
+      <a class="btn btn-out" href="#work" data-en="View Work" data-es="Ver Trabajo">View Work</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hs"><div class="n">2011</div><div class="l" data-en="Established" data-es="Fundada">Established</div></div>
+      <div class="hs"><div class="n">SoCal</div><div class="l" data-en="LA · OC · Inland Empire" data-es="LA · OC · Inland Empire">LA · OC · Inland Empire</div></div>
+      <div class="hs"><div class="n">#1130494</div><div class="l" data-en="CA License" data-es="Licencia CA">CA License</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kick" data-en="Capabilities" data-es="Capacidades">Capabilities</span>
+        <h2 style="margin-top:18px;" data-en="What we fabricate" data-es="Lo que fabricamos">What we fabricate</h2>
+      </div>
+      <span class="idx mono">[ 06 SERVICES ]</span>
+    </div>
+    <div class="svc-list">
+      <div class="row"><span class="num">01</span><h3 data-en="Storefronts" data-es="Fachadas">Storefronts</h3><p data-en="Commercial aluminum storefronts, entrances and window walls for retail, offices and restaurants." data-es="Fachadas, entradas y muros de ventanas para tiendas, oficinas y restaurantes.">Commercial aluminum storefronts, entrances and window walls for retail, offices and restaurants.</p><a class="go" href="tel:+13232779270"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="row"><span class="num">02</span><h3 data-en="Sliding Doors" data-es="Corredizas">Sliding Doors</h3><p data-en="Smooth-glide aluminum patio sliders in white, black or anodized finishes." data-es="Puertas corredizas de aluminio en blanco, negro o anodizado.">Smooth-glide aluminum patio sliders in white, black or anodized finishes.</p><a class="go" href="tel:+13232779270"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="row"><span class="num">03</span><h3 data-en="Entry Doors" data-es="Entradas">Entry Doors</h3><p data-en="Single and pair entry systems with sidelights and transoms for a sharp first impression." data-es="Entradas sencillas o dobles con laterales y travesaños para una impresión nítida.">Single and pair entry systems with sidelights and transoms for a sharp first impression.</p><a class="go" href="tel:+13232779270"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="row"><span class="num">04</span><h3 data-en="Bi-Fold Doors" data-es="Plegables">Bi-Fold Doors</h3><p data-en="Folding glass walls that open a space wide to the outdoors." data-es="Muros de vidrio plegables que abren por completo al exterior.">Folding glass walls that open a space wide to the outdoors.</p><a class="go" href="tel:+13232779270"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="row"><span class="num">05</span><h3 data-en="Windows" data-es="Ventanas">Windows</h3><p data-en="Fixed picture windows and operable aluminum units, built to your opening." data-es="Ventanas panorámicas fijas y operables, hechas a su abertura.">Fixed picture windows and operable aluminum units, built to your opening.</p><a class="go" href="tel:+13232779270"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="row"><span class="num">06</span><h3 data-en="Gates &amp; Custom" data-es="Portones / Especial">Gates &amp; Custom</h3><p data-en="Aluminum gates and one-off fabrication — plus glass, closers and hardware." data-es="Portones de aluminio y fabricación especial — más vidrio, cierres y herrajes.">Aluminum gates and one-off fabrication — plus glass, closers and hardware.</p><a class="go" href="tel:+13232779270"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+    </div>
+    <div class="finishes">
+      <span data-en="FINISHES:" data-es="ACABADOS:">FINISHES:</span>
+      <span><b>Clear Anodized</b></span><span><b>Bronze Anodized</b></span><span data-en="<b>Custom Colors</b>" data-es="<b>Colores a Medida</b>">Custom Colors</span>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="gal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kick" data-en="Field record" data-es="Registro de obra">Field record</span><h2 style="margin-top:18px;" data-en="Recent installs" data-es="Instalaciones recientes">Recent installs</h2></div>
+      <span class="idx mono">[ LOS ANGELES, CA ]</span>
+    </div>
+    <div class="grid">
+      <div class="cell c1"><img src="assets/entry-door-sidelight.png" alt="White aluminum entry door with sidelight and transom" /><span class="tag" data-en="Entry / Sidelight" data-es="Entrada / Lateral">Entry / Sidelight</span></div>
+      <div class="cell c2"><img src="assets/storefront-black.png" alt="Black aluminum storefront at a cafe" /><span class="tag" data-en="Café Storefront / Black" data-es="Fachada Café / Negro">Café Storefront / Black</span></div>
+      <div class="cell c3"><img src="assets/black-patio-slider.png" alt="Black aluminum patio slider" /><span class="tag" data-en="Patio Slider / Black" data-es="Corrediza / Negro">Patio Slider / Black</span></div>
+      <div class="cell c4"><img src="assets/white-patio-slider.png" alt="White sliding patio door" /><span class="tag" data-en="Slider / White" data-es="Corrediza / Blanco">Slider / White</span></div>
+      <div class="cell c5"><img src="assets/picture-window.png" alt="Large picture window" /><span class="tag" data-en="Picture Window" data-es="Ventana Panorámica">Picture Window</span></div>
+      <div class="cell c6"><img src="assets/storefront-white.png" alt="White aluminum commercial storefront and door" /><span class="tag" data-en="Storefront / White" data-es="Fachada / Blanco">Storefront / White</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section id="area" class="area">
+  <div class="wrap area-in">
+    <div>
+      <span class="kick" data-en="Coverage" data-es="Cobertura">Coverage</span>
+      <h2 style="margin-top:18px;" data-en="LA, Orange County<br/>&amp; the Inland Empire" data-es="LA, Orange County<br/>y el Inland Empire">LA, Orange County<br/>&amp; the Inland Empire</h2>
+      <p data-en="Fabricated in our South LA shop, installed across Southern California — residential and commercial alike." data-es="Fabricado en nuestro taller del sur de LA, instalado en todo el sur de California — residencial y comercial.">Fabricated in our South LA shop, installed across Southern California — residential and commercial alike.</p>
+      <div class="citygrid">
+        <span class="hl">Los Angeles</span><span>Orange County</span><span data-en="Inland Empire" data-es="Inland Empire">Inland Empire</span>
+        <span>Huntington Park</span><span>South Gate</span><span>Downey</span>
+        <span>Bell</span><span>Inglewood</span><span>Long Beach</span>
+        <span>Compton</span><span>Anaheim</span><span>Riverside</span>
+      </div>
+    </div>
+    <div class="area-map">
+      <div class="pin" style="left:44%;top:40%;"></div><span class="ml" style="left:48%;top:36%;">LOS ANGELES</span>
+      <div class="pin" style="left:28%;top:60%;"></div><span class="ml" style="left:10%;top:64%;">INGLEWOOD</span>
+      <div class="pin" style="left:62%;top:62%;"></div><span class="ml" style="left:64%;top:58%;">DOWNEY</span>
+      <div class="pin" style="left:56%;top:78%;"></div><span class="ml" style="left:58%;top:82%;">LONG BEACH</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap in">
+    <h2 data-en="Get your free quote" data-es="Reciba su cotización gratis">Get your free quote</h2>
+    <p data-en="Tell us about your project. We measure and quote at no charge." data-es="Cuéntenos su proyecto. Medimos y cotizamos sin costo.">Tell us about your project. We measure and quote at no charge.</p>
+    <a class="cta-phone" href="tel:+13232779270"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(323) 277-9270</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <img class="flogo" src="assets/logo-transparent.png" alt="JF Aluminum Doors" />
+        <p style="max-width:330px;" data-en="Custom aluminum doors, windows and storefronts — fabricated and installed in Los Angeles since 2011." data-es="Puertas, ventanas y fachadas de aluminio a medida — fabricadas e instaladas en Los Ángeles desde 2011.">Custom aluminum doors, windows and storefronts — fabricated and installed in Los Angeles since 2011.</p>
+      </div>
+      <div>
+        <h4 data-en="Contact" data-es="Contacto">Contact</h4>
+        <div class="frow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+13232779270">(323) 277-9270</a></div>
+        <div class="frow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>5832 Holmes Ave, Los Angeles, CA 90001</span></div>
+      </div>
+      <div>
+        <h4 data-en="Hours" data-es="Horario">Hours</h4>
+        <div class="frow" style="flex-direction:column;gap:6px;">
+          <span data-en="Mon–Fri &nbsp;7:00 AM – 5:00 PM" data-es="Lun–Vie &nbsp;7:00 AM – 5:00 PM">Mon–Fri &nbsp;7:00 AM – 5:00 PM</span>
+          <span data-en="Saturday &nbsp;8:00 AM – 1:00 PM" data-es="Sábado &nbsp;8:00 AM – 1:00 PM">Saturday &nbsp;8:00 AM – 1:00 PM</span>
+          <span data-en="Sunday &nbsp;Closed" data-es="Domingo &nbsp;Cerrado">Sunday &nbsp;Closed</span>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 JF ALUMINUM DOORS</span>
+      <span class="lic">CA LIC. #1130494</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/lang.js"></script>
+</body>
+</html>
